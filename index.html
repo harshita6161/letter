@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+ <meta name="description" content="Boyfriend's day letter">
+  <meta name="keywords" content="Turyesh, letter, Boyfriend">
+  <meta name="author" content="Harshita">
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <title>Hey</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Times New Roman', serif;
+      background-image: url(original.png); 
+      background-color: #E0C9A6; 
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;       
+width: 100%;
+height: 100%;
+background-position: top center;
+    }
+
+    .letter {
+      background-color: #f5ecd8;
+      margin: 30px auto;
+      padding: 30px;
+      border: 2px solid #ccc;
+      max-width: 700px;
+      text-align: justify;
+      line-height: 1.4;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+      
+  </style>
+</head>
+<body>
+  <div class="letter">
+<form id="passwordForm">
+    <label for="password">Enter the key:</label>
+    <input type="password" id="password" name="password" required>
+    <button type="button" onclick="checkPassword()">Submit</button>
+</form>
+
+<script>
+    function checkPassword() {
+        
+        var password = document.getElementById("password").value;
+
+        
+        if (password === "04032002") {
+            
+             window.location.href = "letter.html";
+      
+        } else {
+            
+            alert("Incorrect key. Please try again.");
+        }
+    }
+    
+</script>
+
+</div>
+</body>
+</html>
